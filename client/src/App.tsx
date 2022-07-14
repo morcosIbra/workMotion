@@ -1,8 +1,8 @@
 import React from 'react';
 
-import EmployeesListView from './Employees/views/EmployeesListView/EmployeesListView';
+import EmployeesListView from './employees/views/EmployeesListView/EmployeesListView';
 
-import Layout from './common/Container/Layout/Layout';
+import Layout from './common/container/Layout/Layout';
 
 function App() {
   return (

@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import { store } from './store';
-import theme from './Theme';
-import ErrorBoundary from './common/Container/ErrorBoundaries';
+import theme from './theme';
+import ErrorBoundary from './common/container/ErrorBoundaries';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

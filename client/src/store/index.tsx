@@ -3,7 +3,7 @@ import { applyMiddleware, compose } from "redux";
 import createSagaMiddleware from "redux-saga";
 
 import rootReducer from "./rootReducer";
-import employeesSagas from "../Employees/store/asyncActions";
+import employeesSagas from "../employees/store/asyncActions";
 
 declare global {
   interface Window {

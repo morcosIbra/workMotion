@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { EmployeeProfile } from "../Employees/store/types";
+import { EmployeeProfile } from "../employees/store/types";
 
 const employeesAxios = axios.create({
   baseURL: `${process.env.REACT_APP_BASE_URL}/employees`,
