@@ -1,8 +1,8 @@
 import styled from "styled-components/macro";
 
 export const Overlay = styled.div`
-position: fixed;
 display: block;
+position:fixed;
 width: 100%;
 height: 100%;
 top: 0;
@@ -15,18 +15,15 @@ cursor: pointer;
 `;
 
 export const PopupBody = styled.div`
-  margin: 70px auto;
   z-index: 1;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
-  transition: all 5s ease-in-out;
-  margin: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: calc(50% - 55px);
+  left: calc(50% - 120px);
+  height: 70px;
+  width: 200px;
 `;
 
 export const CloseButton = styled.button`
