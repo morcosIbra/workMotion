@@ -1,0 +1,29 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Mahmoud Shokry",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Jack Samy",
+      "status": "approved"
+    },
+    {
+      "id": 3,
+      "name": "Karim Fathy",
+      "status": "added"
+    },
+    {
+      "id": 4,
+      "name": "Ehab Atef",
+      "status": "inCheck"
+    },
+    {
+      "id": 5,
+      "name": "Mohnd Awad",
+      "status": "inCheck"
+    }
+  ]
+}
