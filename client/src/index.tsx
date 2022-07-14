@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import { store } from './store';
 import theme from './theme';
-import ErrorBoundary from './common/container/ErrorBoundaries';
+import ErrorBoundary from './common/containers/ErrorBoundaries';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
