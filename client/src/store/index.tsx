@@ -1,8 +1,9 @@
 import { legacy_createStore as createStore } from "redux";
 import { applyMiddleware, compose } from "redux";
 import createSagaMiddleware from "redux-saga";
-import employeesSagas from "../Employees/store/asyncActions";
+
 import rootReducer from "./rootReducer";
+import employeesSagas from "../Employees/store/asyncActions";
 
 declare global {
   interface Window {

@@ -1,6 +1,8 @@
 import React from "react";
-import { TableWrapper, HeaderCol, HeaderRow, Row, RowCol } from "./style";
+
 import { Props } from "./types";
+
+import { TableWrapper, HeaderCol, HeaderRow, Row, RowCol } from "./style";
 
 const Table = ({ headers, rows }: Props) => (
   <TableWrapper>

@@ -1,9 +1,7 @@
-import axios, { AxiosError } from "axios";
 import { call, put, takeEvery } from "redux-saga/effects";
-import {
-  fetchEmployeesRequest,
-  updateEmployeeRequest,
-} from "../../axios/employeesRequests";
+
+import { ActionTypes, UpdateProfile } from "./types";
+
 import {
   fetchProfilesFailure,
   fetchProfilesSuccess,
@@ -11,7 +9,12 @@ import {
   updateProfileSuccess,
 } from "./actions";
 import { handleAsyncActionError } from "../../store/handleError";
-import { ActionTypes, UpdateProfile } from "./types";
+
+import {
+  fetchEmployeesRequest,
+  updateEmployeeRequest,
+} from "../../axios/employeesRequests";
+
 
 function* fetchProfilesSaga() {
   try {

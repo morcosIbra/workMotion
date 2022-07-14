@@ -1,8 +1,11 @@
 import React from "react";
+
+import { Props } from "./types";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+
 import { MainContainer, LayoutWrapper } from "./style";
-import { Props } from "./types";
 
 const Layout = ({ children }: Props) => {
   return (

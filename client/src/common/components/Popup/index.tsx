@@ -1,6 +1,8 @@
 import React, { FC, useEffect } from "react";
-import { PopupBody, CloseButton, Content, Overlay } from "./style";
+
 import { Props } from "./types";
+
+import { PopupBody, CloseButton, Content, Overlay } from "./style";
 
 const Popup: FC<Props> = ({ onClose, children }) => {
   useEffect(() => {

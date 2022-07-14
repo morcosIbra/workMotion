@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import Popup from "../../components/Popup";
+
 import { Props, State } from "./types";
+
+import Popup from "../../components/Popup";
 
 class ErrorBoundary extends Component<Props, State> {
   constructor(props: Props) {

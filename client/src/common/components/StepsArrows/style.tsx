@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+
 import { StepProps } from './types';
 
 export const StepsWrapper = styled.div`

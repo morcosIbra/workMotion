@@ -1,8 +1,8 @@
 import React from "react";
-import { Step, StepsWrapper } from "./style";
+
 import { Props } from "./types";
 
-
+import { Step, StepsWrapper } from "./style";
 
 const StepsArrows: React.FC<Props> = ({ steps, activeStep, onStepClick, onStepClickArgs }) => {
   return (
@@ -11,7 +11,7 @@ const StepsArrows: React.FC<Props> = ({ steps, activeStep, onStepClick, onStepCl
         <Step
           key={key}
           active={key === activeStep}
-          onClick={() => onStepClick(key, ...onStepClickArgs  )}
+          onClick={() => onStepClick(key, ...onStepClickArgs)}
         >
           {value}
         </Step>

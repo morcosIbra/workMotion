@@ -1,13 +1,17 @@
 import React, { FC, useEffect } from "react";
+
 import { useDispatch, useSelector } from "react-redux";
+import { setError, fetchProfiles, updateProfile } from "../../store/actions";
+import { RootState } from "../../../store";
+
+import { TableRow } from "../../../common/components/Table/types";
+import { EmployeeProfile } from "../../store/types";
+import { allStatus, EmployeesTableHeaders } from "../../config/EmployeesTable";
+
 import Popup from "../../../common/components/Popup";
 import StepsArrows from "../../../common/components/StepsArrows";
 import Table from "../../../common/components/Table";
-import { TableRow } from "../../../common/components/Table/types";
-import { RootState } from "../../../store";
-import { allStatus, EmployeesTableHeaders } from "../../config/EmployeesTable";
-import { setError, fetchProfiles, updateProfile } from "../../store/actions";
-import { EmployeeProfile } from "../../store/types";
+
 import { EmployeesListWrapper, ErrorMsg } from "./style";
 
 const EmployeesListContainer: FC = () => {
