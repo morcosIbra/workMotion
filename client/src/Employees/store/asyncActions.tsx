@@ -22,9 +22,8 @@ function* fetchProfilesSaga() {
   }
 }
 
-function* updateProfileSaga({ type, payload }: UpdateProfile) {
+function* updateProfileSaga({ payload }: UpdateProfile) {
   try {
-    console.log({ type, payload });
     const { data } = yield call(updateEmployeeRequest, payload.id, payload.body);
     yield put(updateProfileSuccess(data));
   } catch (error) {

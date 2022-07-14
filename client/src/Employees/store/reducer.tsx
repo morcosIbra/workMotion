@@ -1,7 +1,7 @@
 import initialState from "./initialState";
 import { ActionTypes, EmployeeProfile, EmployeesActions, EmployeesState } from "./types";
 
-const employeesReducer = (state = initialState, action:EmployeesActions):EmployeesState => {
+const employeesReducer = (state = initialState, action: EmployeesActions): EmployeesState => {
   switch (action.type) {
     case ActionTypes.FETCH_PROFILES:
       return {
@@ -20,16 +20,17 @@ const employeesReducer = (state = initialState, action:EmployeesActions):Employe
         loadingProfiles: false,
         error: action.payload,
       };
-    case ActionTypes.UPDATE_PROFILE_SUCCESS:
+    case ActionTypes.UPDATE_PROFILE_SUCCESS: {
       const payload = action.payload;
-      const newState:EmployeesState = {
+      const newState: EmployeesState = {
         ...state,
       };
       const profileIndex = newState.profiles.findIndex(
-        (profile:EmployeeProfile) => profile.id === payload.id
+        (profile: EmployeeProfile) => profile.id === payload.id
       );
       if (profileIndex > -1) newState.profiles[profileIndex] = payload;
       return newState;
+    }
     case ActionTypes.UPDATE_PROFILE_FAILED:
       return {
         ...state,
