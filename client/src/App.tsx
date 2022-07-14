@@ -2,7 +2,7 @@ import React from 'react';
 
 import EmployeesListView from './employees/views/EmployeesListView/EmployeesListView';
 
-import Layout from './common/container/Layout/Layout';
+import Layout from './common/containers/Layout/Layout';
 
 function App() {
   return (
