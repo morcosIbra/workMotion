@@ -1,6 +1,6 @@
 import React from 'react';
 
-import EmployeesListView from './employees/views/EmployeesListView/EmployeesListView';
+import EmployeesListView from './employees/views/EmployeesListView';
 
 import Layout from './common/containers/Layout/Layout';
 
