@@ -6,7 +6,7 @@ export interface EmployeeProfile {
 
 export interface EmployeesState {
   profiles: EmployeeProfile[];
-  loadingProfiles: Boolean;
+  loadingProfiles: boolean;
   error: string | null;
 }
 
@@ -25,7 +25,7 @@ export interface FetchProfiles {
 }
 
 export interface FetchProfilesSuccess {
-  type: ActionTypes.FETCH_PROFILES_SUCCESS, payload:EmployeeProfile[]
+  type: ActionTypes.FETCH_PROFILES_SUCCESS, payload: EmployeeProfile[]
 }
 
 export interface FetchProfilesFailure {
@@ -34,7 +34,7 @@ export interface FetchProfilesFailure {
 }
 
 export interface UpdateProfilePayload {
-  id: number, body: {}
+  id: number, body: Record<string, unknown>
 };
 
 export interface UpdateProfile {
