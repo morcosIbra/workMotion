@@ -54,7 +54,6 @@ const EmployeesListContainer: FC = () => {
   const clearError = () => {
     dispatch(setError(''));
   }
-  throw new Error("asdasd");
 
   return (
     <EmployeesListWrapper>
