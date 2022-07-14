@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { StepProps } from './types';
 
 export const StepsWrapper = styled.div`
   margin: auto;
@@ -6,9 +7,7 @@ export const StepsWrapper = styled.div`
   width: max-content;
 `;
 
-type StepProps = {
-  active: Boolean
-};
+
 export const Step = styled.div<StepProps>`
   display: inline-block;
   position: relative;
