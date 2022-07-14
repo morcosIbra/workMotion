@@ -64,7 +64,7 @@ To deploy this project run
 
 ## API Reference
 
-#### Get all items
+#### Get all employees
 
 ```
   GET /employees
