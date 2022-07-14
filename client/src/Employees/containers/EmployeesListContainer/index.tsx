@@ -13,6 +13,7 @@ import StepsArrows from "../../../common/components/StepsArrows";
 import Table from "../../../common/components/Table";
 
 import { EmployeesListWrapper, ErrorMsg } from "./style";
+import Loading from "../../../common/components/Loading";
 
 const EmployeesListContainer: FC = () => {
   const { profiles, error, loadingProfiles } = useSelector((state: RootState) => state.employees);
@@ -61,7 +62,8 @@ const EmployeesListContainer: FC = () => {
 
   return (
     <EmployeesListWrapper>
-      {!loadingProfiles && error && <Popup onClose={clearError}>
+      {loadingProfiles && <Loading />}
+      {error && <Popup onClose={clearError}>
         <ErrorMsg>{error}</ErrorMsg>
       </Popup>}
       {tableRows.length > 0 && (
